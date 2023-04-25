@@ -1,0 +1,21 @@
+<div class="topbar">
+  <a [routerLink]="['/']">
+    <h1>Interview Challenge</h1>
+  </a>
+
+  <div class="tabs">
+    <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="button">
+      <i class="material-icons">checklist</i>
+      Instructions
+    </a>
+
+    <a
+      [routerLink]="['/workspace']"
+      [routerLinkActive]="['active']"
+      class="button"
+    >
+      <i class="material-icons">work</i>
+      Workspace
+    </a>
+  </div>
+</div>

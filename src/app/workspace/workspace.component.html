@@ -1,0 +1,21 @@
+<div class="container">
+  <div *ngIf="!running; else elseBlock">
+    <a class="button call-button answer-button" (click)="startTimer($event)">
+      <i class="material-icons" style="color: white;">call</i>
+    </a>
+  </div>
+  <ng-template #elseBlock>
+    <a class="button call-button hangup-button" (click)="stopTimer($event)">
+      <div style="display: flex; align-items: center; justify-content: center;">
+        <i
+          class="material-icons"
+          style="color: white; transform: rotate(-225deg); position: relative; top: 2px;"
+          >call</i
+        >
+        <span style="margin-left: 1rem; color: white; justify-content: right">
+          {{ timerCounter | duration }}
+        </span>
+      </div>
+    </a>
+  </ng-template>
+</div>

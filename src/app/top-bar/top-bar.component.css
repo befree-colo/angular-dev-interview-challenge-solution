@@ -1,0 +1,36 @@
+/* Top Bar */
+
+.topbar {
+  background-color: #1976d2;
+  padding: 1rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar .tabs {
+  margin-top: 0.5rem;
+}
+
+.topbar h1 {
+  color: white;
+  margin: 0;
+}
+
+/* Fancy Button */
+
+.topbar .button {
+  background-color: white;
+  color: #1976d2;
+  margin: 0 0.25rem;
+  border-radius: 6px 6px 0 0;
+}
+
+.topbar .button:not(.active) {
+  background-color: #ccc;
+  position: relative;
+}
+
+.topbar .button i.material-icons {
+  color: #1976d2;
+  padding-right: 4px;
+}
